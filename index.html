@@ -29,7 +29,10 @@
 
   <div class="search">
     <label for="search-input">Find</label>
-    <input id="search-input" type="text" placeholder="e.g. iron, immune, bones…" autocomplete="off">
+    <div class="search-box">
+      <input id="search-input" type="text" placeholder="e.g. iron, immune, bones…" autocomplete="off">
+      <button type="button" id="clear-search" aria-label="Clear search" hidden>&times;</button>
+    </div>
   </div>
 
   <div class="count" id="count"></div>
@@ -37,7 +40,7 @@
   <div class="grid" id="grid"></div>
 
   <footer>
-    Tap a card, or press Enter/Space when it's focused, to flip it. Each card's URL (like #vitamin-d) links straight to that nutrient. RDA figures are general adult daily values — individual needs vary by age, sex, pregnancy, and health status. Not medical advice.
+    Tap a card, or press Enter/Space when it's focused, to flip it. Chips under "Works with" jump to nutrients that interact with the one you're looking at. Each card's URL (like #vitamin-d) links straight to that nutrient. RDA figures are general adult daily values — individual needs vary by age, sex, pregnancy, and health status. Not medical advice.
   </footer>
 </div>
 
